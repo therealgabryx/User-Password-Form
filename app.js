@@ -1,6 +1,6 @@
 function formCheck() {
     console.log("formCheck")
-    if (checkPassword() && checkUser()) {
+    if (checkPassword() && checkUser() && checkEmail()) {
         registeredSuccess()
     } else {
         registeredFail()
@@ -13,6 +13,18 @@ function registeredSuccess() {
 
 function registeredFail() {
     alert(`controlla i campi inseriti e riprova`)
+}
+
+function checkEmail() {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (document.getElementById('email').value.match(mailformat)) {
+        // console.log("MAIL: checkk")
+        return true;
+    } 
+    else {
+        // console.log("MAIL: nope")
+        return false;
+    }
 }
 
 function checkPassword() {
