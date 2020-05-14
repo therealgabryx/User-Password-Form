@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>JS Example</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <form name ="registerForm" id="registerForm" onsubmit="formCheck()">
+        <input type="text" id="username" name="username" placeholder="username" required><br><br>
+        <input type="text" id="password" name="password" placeholder="password" required><button type="button" onclick="infoPassword()">?</button><br>
+        <input type="text" id="passwordCheck" name="passwordCheck" placeholder="repeat password" required><br><br>
+        <button type="sumbit">sumbit</button>
+        <button type="reset">reset</button>
+      </form>
+    </div>
+  </body>
+</html>
